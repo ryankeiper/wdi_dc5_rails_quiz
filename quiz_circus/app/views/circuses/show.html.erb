@@ -1,1 +1,6 @@
+<h2><%= @circus.name %></h2>
+<% @entertainers.each_with_index do |ent, i| %>
+  <p><%= "#{i + 1}. #{ent.name} - #{ent.specialty}" %></p>
+  <% end %>
 
+<p><%= link_to "Home Page", circuses_path %></p>
